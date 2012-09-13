@@ -15,6 +15,6 @@ describe Calcula do
     		@calcula.suma('12').must_equal  3
   	end 
   	it 'suma 123' do
-    	@calcula.suma('123').must_equal  6
+    		@calcula.suma('123').must_equal  6
   	end
 end
