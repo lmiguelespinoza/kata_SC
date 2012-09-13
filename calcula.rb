@@ -5,9 +5,7 @@ class Calcula
 		longitud=cadena.length
 		while longitud>0
 			digito=cadena[posicion,1]
-			resultado+=1 if digito=='1'
-			resultado+=2 if digito=='2'
-			resultado+=3 if digito=='3'
+			resultado+=digito.to_i
 			longitud-=1
 			posicion+=1			
 		end	
