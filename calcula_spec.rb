@@ -5,6 +5,11 @@ describe Calcula do
 	before do
     		@calcula=Calcula.new
   	end
+  	
+  	it 'suma 1\n2,3' do
+    		@calcula.suma('1\n2,3').must_equal  6
+  	end
+
   	it 'suma 19710923' do
     		@calcula.suma('19710923').must_equal  32
   	end
