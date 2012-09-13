@@ -6,15 +6,19 @@ describe Calcula do
     		@calcula=Calcula.new
   	end
   	
-  	it 'suma 1\n2,3' do
-    		@calcula.suma('1\n2,3').must_equal  6
+  	it 'suma 1,\n' do
+    		@calcula.suma('1,\n').must_equal 0
   	end
+
+  	it 'suma 1\n2,3' do
+  		@calcula.suma('1\n2,3').must_equal  6
+ 	end
 
   	it 'suma 19710923' do
     		@calcula.suma('19710923').must_equal  32
   	end
   	it 'suma 1234' do
-    		@calcula.suma('1234').must_equal  10
+   		@calcula.suma('1234').must_equal  10
   	end
   	it 'suma 123' do
     		@calcula.suma('123').must_equal  6
